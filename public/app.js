@@ -9,12 +9,9 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_renderForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/renderForm */ "./src/modules/renderForm.js");
-/* harmony import */ var _modules_searchCode__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/searchCode */ "./src/modules/searchCode.js");
+/* harmony import */ var _modules_searchCode__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/searchCode */ "./src/modules/searchCode.js");
 
-
-(0,_modules_renderForm__WEBPACK_IMPORTED_MODULE_0__["default"])();
-(0,_modules_searchCode__WEBPACK_IMPORTED_MODULE_1__["default"])();
+(0,_modules_searchCode__WEBPACK_IMPORTED_MODULE_0__["default"])();
 
 /***/ }),
 
@@ -36,46 +33,6 @@ var ajaxService = function ajaxService(address, city) {
   });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ajaxService);
-
-/***/ }),
-
-/***/ "./src/modules/form.js":
-/*!*****************************!*\
-  !*** ./src/modules/form.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-var form = function form() {
-  return "\n    <div class=\"form-group\">\n        <input type=\"text\" class=\"form-control city\" placeholder=\"Miestas\">\n    </div>\n    <div class=\"form-group\">\n        <input type=\"text\" class=\"form-control term\" placeholder=\"Jusu adresas\">\n    </div>\n    <div class=\"form-group\">\n        <input type=\"text\" class=\"form-control result\" readonly>\n    </div>\n    <div class='form-group'>\n        <button type=\"submit\" class=\"btn btn-primary\">Ieskoti</button>\n    </div>\n    ";
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (form);
-
-/***/ }),
-
-/***/ "./src/modules/renderForm.js":
-/*!***********************************!*\
-  !*** ./src/modules/renderForm.js ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form */ "./src/modules/form.js");
- //modulio importas
-
-var renderFrom = function renderFrom() {
-  var formElement = document.createElement('form');
-  formElement.className = "form-line";
-  formElement.innerHTML = (0,_form__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  document.querySelector('.card-body').appendChild(formElement);
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderFrom);
 
 /***/ }),
 
